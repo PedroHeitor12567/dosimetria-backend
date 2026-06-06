@@ -1,8 +1,6 @@
+from dataclasses import dataclass
 from enum import Enum
 from typing import List
-
-from pydantic.dataclasses import dataclass
-
 
 class CircustanciaJudicial(str, Enum):
     CULPABILIDADE = "culpabilidade"
