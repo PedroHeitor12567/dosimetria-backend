@@ -26,7 +26,7 @@ class AjusteFase3:
     descricao: str
     fracao_numerador: int
     fracao_denominador: int
-    aumentar = bool
+    aumentar: bool
 
 @dataclass
 class ResultadoDosimetria:
