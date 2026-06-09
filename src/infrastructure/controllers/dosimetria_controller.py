@@ -34,8 +34,11 @@ class DosimetriaResponse(BaseModel):
     pena_maxima_meses: int
     circunstancias_desfavoraveis: List[str]
     pena_base_meses: int
+    pena_base_dias: int
     pena_intermediaria_meses: int
+    pena_intermediaria_dias: int
     pena_definitiva_meses: int
+    pena_definitiva_dias: int
     pena_definitiva_anos: float
     pena_definitiva_formatada: str
 
@@ -80,6 +83,9 @@ def calcular_dosimetria(
         pena_base_meses=resultado.pena_base_meses,
         pena_intermediaria_meses=resultado.pena_intermediaria_meses,
         pena_definitiva_meses=resultado.pena_definitiva_meses,
+        pena_base_dias=resultado.pena_base_dias,
+        pena_intermediaria_dias=resultado.pena_intermediaria_dias,
+        pena_definitiva_dias=resultado.pena_definitiva_dias,
         pena_definitiva_anos=resultado.pena_definitiva_anos,
         pena_definitiva_formatada=resultado.pena_definitiva_formatada,
     )
